@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back" />
+
+    <!-- Título da tela -->
+    <TextView
+        android:id="@+id/textTitleDespesas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inserir Despesas"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Campo para inserir litros de leite -->
+    <TextView
+        android:id="@+id/textDespesasRacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sacos de Ração:"
+        android:layout_marginLeft="16dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/textTitleDespesas"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:id="@+id/editSacosRacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/textDespesasRacao"
+        android:inputType="numberDecimal"
+        android:hint="Digite a quantidade de sacos de ração"/>
+
+
+    <Button
+        android:id="@+id/btnSaveSacosRacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submeter"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/editSacosRacao"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#F44336"/>
+
+
+    <TextView
+        android:id="@+id/textQuantFardos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número de Fardos(Palha/Feno):"
+        android:textSize="18sp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/btnSaveSacosRacao"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editFardosRec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textQuantFardos"
+        android:inputType="number"
+        android:layout_marginLeft="16dp"
+        android:hint="Digite o número de fardos"/>
+
+
+    <Button
+        android:id="@+id/btnSaveFardos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submeter"
+        android:layout_below="@+id/editFardosRec"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:backgroundTint="#F44336"/>
+
+
+    <TextView
+        android:id="@+id/textod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Outras despesas:"
+        android:textSize="18sp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/btnSaveFardos"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textod"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="16dp"
+        android:hint="Digite o valor de outras despesas"/>
+
+
+    <Button
+        android:id="@+id/btnSalvarOutrasDespesas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submeter"
+        android:layout_below="@+id/editod"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:backgroundTint="#F44336"/>
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Botão Home"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home"
+        android:onClick="goBack"/>
+
+</RelativeLayout>
+
+

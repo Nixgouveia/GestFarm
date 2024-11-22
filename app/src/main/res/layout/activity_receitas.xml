@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back" />
+
+    <!-- Título da tela -->
+    <TextView
+        android:id="@+id/textTitleReceitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inserir Receitas"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Campo para inserir litros de leite -->
+
+    <TextView
+        android:id="@+id/textLitrosLeite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTitleReceitas"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="16dp"
+        android:text="Litros de Leite:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editLitrosLeite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textLitrosLeite"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="16dp"
+        android:hint="Digite a quantidade de litros de leite" />
+
+    <!-- Botão para salvar litros de leite -->
+    <Button
+        android:id="@+id/btnGuardarLitrosLeite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submeter"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/editLitrosLeite"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4CAF50"/>
+
+    <!-- Campo para inserir número de animais vendidos -->
+    <TextView
+        android:id="@+id/textAnimaisVendidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Número de Animais Vendidos:"
+        android:textSize="18sp"
+        android:layout_below="@+id/btnGuardarLitrosLeite"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editAnimaisVendidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAnimaisVendidos"
+        android:layout_marginLeft="16dp"
+        android:inputType="number"
+        android:hint="Digite o número de animais vendidos"/>
+
+    <!-- Botão para salvar número de animais vendidos -->
+    <Button
+        android:id="@+id/btnGuardarAnimaisVendidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submeter"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/editAnimaisVendidos"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4CAF50"/>
+
+    <!-- Campo para inserir valor de subsídios recebidos -->
+    <TextView
+        android:id="@+id/textSubsidiosRecebidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor de Subsídios Recebidos:"
+        android:textSize="18sp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/btnGuardarAnimaisVendidos"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editSubsidiosRecebidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textSubsidiosRecebidos"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="16dp"
+        android:hint="Digite o valor de subsídios recebidos"/>
+
+    <!-- Botão para salvar valor de subsídios recebidos -->
+    <Button
+        android:id="@+id/btnGuardarSubsidiosRecebidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submeter"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/editSubsidiosRecebidos"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4CAF50"/>
+
+    <!-- Botão de voltar para a tela principal (Home) fixado no fundo -->
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Botão Home"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home"
+        android:onClick="goBack"/>
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textConf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Configurações"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:paddingBottom="16dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editPrecoLitroLeite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textConf"
+        android:hint="Preço do Litro de Leite"
+        android:layout_marginLeft="16dp"
+        android:inputType="numberDecimal"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editPrecoBorrego"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPrecoLitroLeite"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:hint="Preço do Borrego"
+        android:inputType="numberDecimal"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btnGuardarPrecos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPrecoFardo"
+        android:layout_marginBottom="30dp"
+        android:layout_centerInParent="true"
+        android:text="Submeter"
+        android:backgroundTint="#4CAF50"/>
+
+    <EditText
+        android:id="@+id/editPrecoRacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPrecoBorrego"
+        android:hint="Preço da Ração"
+        android:layout_marginLeft="16dp"
+        android:inputType="numberDecimal"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/editPrecoFardo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPrecoRacao"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:hint="Preço do Fardo"
+        android:inputType="numberDecimal"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/tvPrecosAtuais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@id/btnGuardarPrecos"
+        android:text="Preços Atuais:"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/btnHomeConfiguracoes"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="Botão Home"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home" />
+</RelativeLayout>
+

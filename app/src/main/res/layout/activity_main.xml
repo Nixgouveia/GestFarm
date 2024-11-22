@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/back">
+
+    <!-- Botão de Configurações no canto superior direito -->
+    <ImageButton
+        android:id="@+id/btnSettings"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Botão de Configurações"
+        android:src="@drawable/ic_menu" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+
+    <!-- Botão Receitas -->
+    <Button
+        android:id="@+id/btnReceitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:layout_marginBottom="24dp"
+        android:text="Receitas"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:backgroundTint="#4CAF50"/>
+
+    <!-- Botão Despesas -->
+    <Button
+        android:id="@+id/btnDespesas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnReceitas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#4CAF50"
+        android:padding="16dp"
+        android:text="Despesas"
+        android:textSize="18sp" />
+
+    <!-- Botão Estatísticas -->
+    <Button
+        android:id="@+id/btnEstatisticas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDespesas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="Estatísticas"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:backgroundTint="#4CAF50"/>
+
+    <Button
+        android:id="@+id/btnHistorico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnEstatisticas"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:text="Histórico"
+        android:backgroundTint="#4CAF50"/>
+
+
+</RelativeLayout>

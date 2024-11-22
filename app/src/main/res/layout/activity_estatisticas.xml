@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/tvEstatisticas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estatísticas"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:paddingBottom="16dp"
+        android:textStyle="bold"/>
+
+    <!-- Spinner para seleção de mês -->
+    <Spinner
+        android:id="@+id/spinnerMes"
+        android:layout_width="153dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/tvEstatisticas"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/meses" />
+
+    <!-- TextView para exibir os dados de receitas -->
+    <TextView
+        android:id="@+id/tvDadosReceitas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerMes"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Dados de Receitas:"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/btnHomeEstatisticas"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="Botão Home"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home" />
+
+</RelativeLayout>
+

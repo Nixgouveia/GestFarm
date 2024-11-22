@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/back">
+
+
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+
+
+    <!-- Botão Despesas -->
+    <Button
+        android:id="@+id/btnReceitash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="#4CAF50"
+        android:padding="16dp"
+        android:text="Historico Receitas"
+        android:textSize="18sp" />
+
+    <!-- Botão Estatísticas -->
+    <Button
+        android:id="@+id/btnDespesash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnReceitash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="Historico Despesas"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:backgroundTint="#F44336"/>
+
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Botão Home"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home"
+        android:onClick="goBack"/>
+
+
+</RelativeLayout>
